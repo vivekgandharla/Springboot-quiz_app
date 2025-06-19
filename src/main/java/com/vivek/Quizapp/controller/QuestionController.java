@@ -1,6 +1,6 @@
 package com.vivek.Quizapp.controller;
 
-import com.vivek.Quizapp.Question;
+import com.vivek.Quizapp.model.Question;
 import com.vivek.Quizapp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

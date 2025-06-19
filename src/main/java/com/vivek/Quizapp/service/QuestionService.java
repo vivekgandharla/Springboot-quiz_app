@@ -1,6 +1,6 @@
 package com.vivek.Quizapp.service;
 
-import com.vivek.Quizapp.Question;
+import com.vivek.Quizapp.model.Question;
 import com.vivek.Quizapp.dao.QuestionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,9 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.springframework.http.HttpStatus.NO_CONTENT;
-import static org.springframework.http.HttpStatus.OK;
 
 @Service
 public class QuestionService {
