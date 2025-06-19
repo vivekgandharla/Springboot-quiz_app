@@ -9,6 +9,9 @@ import java.util.List;
 @Repository
 public interface QuestionDao extends JpaRepository<Question,Integer> {
 
-    List<Question>findByCategory(String category);
+    List<Question> findByCategory(String category);
 
+//    List<Question> findByQuestion(String question);
+
+    void deleteById(Integer id);
 }

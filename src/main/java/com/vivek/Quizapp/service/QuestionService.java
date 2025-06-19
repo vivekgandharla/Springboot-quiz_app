@@ -4,8 +4,6 @@ import com.vivek.Quizapp.Question;
 import com.vivek.Quizapp.dao.QuestionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -25,5 +23,15 @@ public class QuestionService {
     public String addQuestion(Question question) {
         questionDao.save(question);
         return "Question added successfully";
+    }
+
+    public String updateQuestion(Question question) {
+        questionDao.save(question);
+        return "Question updated successfully";
+    }
+
+    public String deleteQuestion(Integer id) {
+        questionDao.deleteById(id);
+        return "Question deleted successfully";
     }
 }
